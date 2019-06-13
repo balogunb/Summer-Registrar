@@ -45,3 +45,41 @@ if you're going javascript i recommend mongodb but if you wanna use sql that wor
 
 
 This is the link wassim sent me the page is https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched
+
+
+///////////////////////////////////////////////////////////////////////////////
+SUMMER PROJECT
+TEAM
+Basit
+Lia
+Shiho
+
+
+Next meeting
+6-10-2019  10pm
+
+TASKS
+
+6/7/2019
+Research on school websites. We would be scraping data from these websites. We should focus on schools in the lehigh valley( Lafayette, Lehigh, Muhlenberg.
+6/12/19
+Find Python Package that scrapes websites.
+Using Mongo Database
+Do research on it
+Learn how it works
+Use JAvascript for GUI
+Research it
+
+
+
+
+
+
+
+
+
+STAGES
+Find websites to scrape data from
+Scap data into the chosen database
+Access database using using javascript.
+React would be using for creating the UI
