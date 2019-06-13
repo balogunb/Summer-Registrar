@@ -1,0 +1,44 @@
+Class Diagram
+Story Board
+One sentence description
+Different types of users
+
+
+
+
+
+Github
+Choose IDE -- Atom,
+Look online for this website
+
+
+https://oasis.farmingdale.edu/banner/bwckschd.p_disp_dyn_sched
+https://oxford.blinn.edu:9010/PROD/bwckschd.p_disp_dyn_sched
+https://ssb.ship.edu/prod/bwckschd.p_disp_dyn_sched
+
+
+
+Shiho Make detailed class diagrem
+	-user input output
+
+
+https://github.com/ryanhugh/searchneu
+
+Next.js   ui side
+express.js     api side
+AWS
+
+
+pbcopy < ~/.ssh/id_rsa.pub
+git clone git@github.com:vasschrys/Summer_Project_2019.git
+yes
+
+
+Converstaion with wassim:
+I actually wouldnt recommend you use the coursechief approach because it relies on the registrar providing a csv file of courses (that they can easily generate from banner but still take a long to time to respond every time)
+
+what I recommend you do is directly parse the banner publicly accessible page by yourself
+using a script (depending on which language you're using)
+i do react with next.js on the ui side and express.js on the api side
+and i use atom or vscode for IDE
+if you're going javascript i recommend mongodb but if you wanna use sql that works too
