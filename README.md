@@ -1,3 +1,3 @@
 # Summer_Project_2019
 
-Collaborating with Lia and Shiho
+Collaborator - Basit, Lia and Shiho
