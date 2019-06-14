@@ -2,6 +2,7 @@
 
 Collaborator - Basit, Lia and Shiho
 
+Tools - Atom, selenium, pip , script atom package, Chromewebdriver, beautifulsoup4
 
 Colleges
 Lafayette College - Summer course website link https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched
