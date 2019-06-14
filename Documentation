@@ -6,6 +6,7 @@ Lia
 Shiho
 
 
+
 Next meeting
 6-17-2019  10pm
 
@@ -30,9 +31,11 @@ Install Python
 Install atom
 Install scripts inside of atom
 Add python.exe to path so you can run python files directly from command line
-Install pip for easy Installation of python packages. https://projects.raspberrypi.org/en/projects/using-pip-on-windows/5
+Install pip System package manager for easy Installation of python packages. https://projects.raspberrypi.org/en/projects/using-pip-on-windows/5
 install selenium https://pypi.org/project/selenium/
-download webdriver and add it to path or manually add it to path 
+download webdriver and add it to path or manually add it to path
+install beautifulsoup4 which would be used for scraping
+Install MongoDB - https://www.mongodb.com/download-center/community
 
 
 
