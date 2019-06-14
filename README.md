@@ -14,3 +14,10 @@ Stages
 - Create a frontend UI in which summer courses would be Displayed
 - Link database with a front end UI
 - Look into adding more schools and scraping data from other school's websites
+
+API for selenium
+https://seleniumhq.github.io/selenium/docs/api/py/webdriver_support/selenium.webdriver.support.select.html?highlight=select#selenium.webdriver.support.select
+
+
+Samples for selenium
+https://seleniumwithjavapython.wordpress.com/selenium-with-python/basics-of-webdriver/handling-dropdowns/
