@@ -5,6 +5,33 @@ from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
 
 
+class SubjectInfo:
+    schol = 'Lafayette'
+    name
+    code
+    assTerm
+    regDate  #registration date
+    attribute
+    location
+    duration
+    type
+    instructor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #launch browser and go to website
 browser = webdriver.Chrome();
 browser.get('https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched')
