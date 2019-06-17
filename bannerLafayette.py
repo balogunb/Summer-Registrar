@@ -6,16 +6,16 @@ from bs4 import BeautifulSoup
 
 
 class SubjectInfo:
-    schol = 'Lafayette'
-    name
-    code
-    assTerm
-    regDate  #registration date
-    attribute
-    location
-    duration
-    type
-    instructor
+    school = 'Lafayette'
+    name = ''
+    code = ''
+    section = ''
+    regDate  = ''#registration date
+    attribute = ''
+    location = ''
+    duration = ''
+    type = ''
+    instructor = ''
 
 
 
@@ -62,16 +62,26 @@ browser.find_element_by_xpath("//input[@type ='submit']").click()
 
 
 #SCRAPING BEGINS
-soup = BeautifulSoup(browser.page_source)#beautifulsoup4 if needed
+soup = BeautifulSoup(browser.page_source)     #beautifulsoup4 if needed
 
 
-sectionTag = [] #contains all the class names
+sectionTag = [] #contains objects which store SubjectInfo
+
 sections =  browser.find_elements_by_xpath("//th[@class='ddtitle']")
+
+
+#Add all subject names to sectionTag
 for x in sections:
-    sectionTag.append( x.find_element_by_tag_name('a'))
+    subject = SubjectInfo()
+    details =  x.find_element_by_tag_name('a').text
+    detailsList = details.split(' - ')
+    subject.name = detailsList[0]
+    subject.code = detailsList[1]
+    subject.section = detailsList[2] + " - " + detailsList[3]
+    sectionTag.append(subject)
 
 for y in sectionTag:
-    print(y.text)
+    print(y.section)
 
 
-#browser.quit()
+browser.quit()
