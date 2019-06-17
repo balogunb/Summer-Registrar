@@ -6,6 +6,9 @@ Tools - Atom, selenium, pip , script atom package, Chromewebdriver, beautifulsou
 
 Colleges
 Lafayette College - Summer course website link https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched
+Lehigh University - Summer course website link https://registration.lehigh.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search
+
+
 
 
 Stages
