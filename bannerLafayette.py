@@ -35,7 +35,16 @@ browser.find_element_by_xpath("//input[@type ='submit']").click()
 
 
 #SCRAPING BEGINS
+soup = BeautifulSoup(browser.page_source)#beautifulsoup4 if needed
 
+
+sectionTag = [] #contains all the class names
+sections =  browser.find_elements_by_xpath("//th[@class='ddtitle']")
+for x in sections:
+    sectionTag.append( x.find_element_by_tag_name('a'))
+
+for y in sectionTag:
+    print(y.text)
 
 
 #browser.quit()
