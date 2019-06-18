@@ -132,3 +132,4 @@ for y in sectionTag:
 
 
 browser.quit()
+browser1.quit()
