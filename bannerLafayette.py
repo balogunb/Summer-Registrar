@@ -1,8 +1,10 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
+from pymongo import MongoClient
 
 
 class SubjectInfo:
@@ -27,8 +29,11 @@ class SubjectInfo:
 
 
 
-
-
+#make the browser headless
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+#chrome_options.binary_location = '/Applications/Google Chrome   Canary.app/Contents/MacOS/Google Chrome Canary'
+#driver = webdriver.Chrome(  chrome_options=chrome_options)
 
 
 
@@ -36,8 +41,8 @@ class SubjectInfo:
 
 
 #launch browser and go to website
-browser = webdriver.Chrome();
-browser1 = webdriver.Chrome();
+browser = webdriver.Chrome(chrome_options=chrome_options);
+browser1 = webdriver.Chrome(chrome_options=chrome_options);
 browser.get('https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched')
 browser1.get('https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched')
 
@@ -106,8 +111,8 @@ for x in titles1:
     subject.section = detailsList[2] + " - " + detailsList[3]
     sectionTag.append(subject)
 
-for y in sectionTag:
-    print(y.name)
+#for y in sectionTag:
+#    print(y.name)
 
 
 #sections = browser.find_elements_by_xpath("/html/body/div/table/tbody/tr/td/table/tbody/tr[2]")
@@ -123,13 +128,23 @@ for y in sectionTag:
 
     #count++
 
-
-
-
-
-
-
-
-
 browser.quit()
 browser1.quit()
+
+
+#Store all data in database
+print('Insert password')
+password = input()
+link = "mongodb+srv://Basitb:" + password + "@collegecourses-ne1ze.mongodb.net/test?retryWrites=true&w=majority"
+client = MongoClient(link)
+db = client.schools_courses
+
+for course in sectionTag:
+    schools_courses = {
+    'name' : course.name,
+    'code' : course.code,
+    'section' : course.section
+
+
+    }
+    db.Lafayette_College.insert_one(schools_courses)
