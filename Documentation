@@ -36,7 +36,11 @@ install selenium https://pypi.org/project/selenium/
 download webdriver and add it to path or manually add it to path
 install beautifulsoup4 which would be used for scraping
 Install MongoDB - https://www.mongodb.com/download-center/community
-Install Pymongo 3.4.0 https://realpython.com/introduction-to-mongodb-and-python/
+Install Pymongo 3.8.0 https://realpython.com/introduction-to-mongodb-and-python/
+Intall dnspython using pip
+Note I am storing the database on my mongodb cluster.
+
+
 
 
 
