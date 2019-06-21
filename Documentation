@@ -7,23 +7,12 @@ Shiho
 
 
 
-Next meeting
-6-17-2019  10pm
+Meeting: Monday's 10pm
 
 TASKS
 
 6/7/2019
 Research on school websites. We would be scraping data from these websites. We should focus on schools in the lehigh valley( Lafayette, Lehigh, Muhlenberg.
-6/12/19
-Find Python Package that scrapes websites.
-Using Mongo Database
-Do research on it
-Learn how it works
-Use JAvascript for GUI
-Research it
-
-
-
 
 
 //////////////////////////////////////////////Instructions for setup
@@ -39,6 +28,8 @@ Install MongoDB - https://www.mongodb.com/download-center/community
 Install Pymongo 3.8.0 https://realpython.com/introduction-to-mongodb-and-python/
 Intall dnspython using pip
 Note I am storing the database on my mongodb cluster.
+I created a react app in courses-website-app  - ask me about this
+Install bootstrap using npm install bootstrap in the same folder
 Install material ui  https://material-ui.com/getting-started/installation/
 
 
