@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 //console.log('Insert password');
 //var password = prompt("input password");
 
-mongoose.connect('mongodb+srv://Basitb:Adebowale2010@collegecourses-ne1ze.mongodb.net/test?retryWrites=true&w=majority')
-
+mongoose.connect('mongodb+srv://Basitb:Adebowale2010@collegecourses-ne1ze.mongodb.net/test?retryWrites=true&w=majority',{useNewURLParser:true });
+console.log(mongoose.version);
 const connection = mongoose.connection;
 
 connection.once('open', function() {
