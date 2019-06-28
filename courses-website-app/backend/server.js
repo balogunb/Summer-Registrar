@@ -9,13 +9,10 @@ const PORT = 4000;
 app.use(cors());
 app.use(bodyParser.json());
 
-//connect to cluster
-//console.log('Insert password');
-//var password = prompt("input password");
-
+//start with npm run lauch
 
 const server = 'mongodb+srv://'+process.env.DB_USER+':'+process.env.DB_PASSWORD+'@collegecourses-ne1ze.mongodb.net/'+process.env.DB_NAME+'?retryWrites=true&w=majority';
-console.log(server);
+//console.log(server);
 mongoose.connect(server, {useNewUrlParser: true});
 console.log(mongoose.version);
 const connection = mongoose.connection;
