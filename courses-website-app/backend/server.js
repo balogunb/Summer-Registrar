@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 
 const server = 'mongodb+srv://'+process.env.DB_USER+':'+process.env.DB_PASSWORD+'@collegecourses-ne1ze.mongodb.net/'+process.env.DB_NAME+'?retryWrites=true&w=majority';
-//console.log(server);
+console.log(server);
 mongoose.connect(server, {useNewUrlParser: true});
 console.log(mongoose.version);
 const connection = mongoose.connection;
