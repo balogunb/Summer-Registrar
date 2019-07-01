@@ -11,9 +11,6 @@ Meeting: Monday's 10pm
 
 TASKS
 
-6/7/2019
-Research on school websites. We would be scraping data from these websites. We should focus on schools in the lehigh valley( Lafayette, Lehigh, Muhlenberg.
-
 
 //////////////////////////////////////////////Instructions for setup
 Install Python
@@ -30,7 +27,7 @@ Intall dnspython using pip
 Note I am storing the database on my mongodb cluster.
 I created a react app in courses-website-app  - ask me about this
 Install bootstrap using npm install bootstrap in the same folder
-Install material ui  https://material-ui.com/getting-started/installation/
+Install material ui  core and icons https://material-ui.com/getting-started/installation/
 Install react-router-dom
 Installed express body-parser cors and mongoose in the backend folder
 install global package
