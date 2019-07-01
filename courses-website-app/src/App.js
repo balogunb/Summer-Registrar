@@ -11,31 +11,54 @@ import SelectSchool from "./components/select-school.component"
 import logo from "./logo.png"
 
 
+import NavBar from './components/NavBar'
+
+
 class App extends Component{
   render(){
     return(
-      <Router>
-        <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <img src={logo} width="30" height = "30" alt="Logo" />
-            <Link to="/" className="navbar-brand">Summer Registrar</Link>
-            <div className="collpase navbar-collapse">
-              <ul className="navbar-nav mr-auto">
-                <li className="navbar-item">
-                  <Link to="/popular-courses" className="nav-link">Search for Classes</Link>
-                </li>
-                <li className="navbar-item">
-                  <Link to="/popular-schools" className="nav-link">Popular Schools</Link>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <Route path="/" exact component={ClassSearch} />
-          <Route path="/popular-courses" component={PopularCourses} />
-          <Route path="/popular-schools" component={PopularSchools} />
+      <div>
+        <NavBar />
+      </div>
 
-        </div>
-      </Router>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // <Router>
+      //   <div className="container">
+      //     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      //       <img src={logo} width="30" height = "30" alt="Logo" />
+      //       <Link to="/" className="navbar-brand">Summer Registrar</Link>
+      //       <div className="collpase navbar-collapse">
+      //         <ul className="navbar-nav mr-auto">
+      //           <li className="navbar-item">
+      //             <Link to="/popular-courses" className="nav-link">Search for Classes</Link>
+      //           </li>
+      //           <li className="navbar-item">
+      //             <Link to="/popular-schools" className="nav-link">Popular Schools</Link>
+      //           </li>
+      //         </ul>
+      //       </div>
+      //     </nav>
+      //     <Route path="/" exact component={ClassSearch} />
+      //     <Route path="/popular-courses" component={PopularCourses} />
+      //     <Route path="/popular-schools" component={PopularSchools} />
+      //
+      //   </div>
+      // </Router>
 
 
     )
