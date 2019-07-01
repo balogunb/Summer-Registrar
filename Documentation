@@ -33,7 +33,8 @@ Install bootstrap using npm install bootstrap in the same folder
 Install material ui  https://material-ui.com/getting-started/installation/
 Install react-router-dom
 Installed express body-parser cors and mongoose in the backend folder
-install global package 
+install global package
+Install python-dotenv
 
 
 

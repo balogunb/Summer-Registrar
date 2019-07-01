@@ -6,6 +6,11 @@ from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
 
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
+load_dotenv()
+
 
 class SubjectInfo:
     school = 'Lafayette'
@@ -132,9 +137,19 @@ browser.quit()
 browser1.quit()
 
 
+#Get env variables
+dotenv_path = join(dirname(r'''C:\Users\Basit\OneDrive\Summer 2019 Projects and Courses\Summer_Project_2019'''), '.env')
+load_dotenv(dotenv_path)
+
+# Accessing variables.
+password = os.getenv('PASSWORD')
+
+print(password)
 #Store all data in database
-print('Insert password')
-password = input()
+#print('Insert password')
+#password = input()
+
+
 link = "mongodb+srv://Basitb:" + password + "@collegecourses-ne1ze.mongodb.net/test?retryWrites=true&w=majority"
 client = MongoClient(link)
 db = client.schools_courses
