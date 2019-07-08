@@ -1,6 +1,5 @@
 # SummerRegistrar_Project_2019
 
-Collaborator - Basit, Lia and Shiho
 
 Tools - Atom, selenium, pip , script atom package, Chromewebdriver, beautifulsoup4, react, bootstrap, Material UI, mongoDB, Pymongo, dnspython
 
