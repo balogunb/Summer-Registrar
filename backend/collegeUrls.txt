@@ -36,40 +36,28 @@
 //     Some sites have robots.txt set to deny so Google and Bing do not spider it. 
 
 
-module.exports = ["https://oscar.gatech.edu/pls/bprod/bwckschd.p_disp_dyn_sched", //currently offline
+module.exports = [
   "https://wl11gp.neu.edu/udcprod8/bwckschd.p_disp_dyn_sched", //Northeastern works
   "https://ssb-prod.ec.ccsu.edu/PROD/byskcsob.P_TermSel", //Central Connecticut State
-
-
   "https://ssb.cc.binghamton.edu/banner/bwckschd.p_disp_dyn_sched", //works but might have issues
-
-
-
   "https://tturedss1.tntech.edu/pls/PROD/bwckschd.p_disp_dyn_sched", //Tennessee TECH
-
-
-
   "https://prd-wlssb.temple.edu/prod8/bwckschd.p_disp_dyn_sched", //Works might take long 
-
-
-
- 
-  "https://ssb.banner.usu.edu/zprod/bwckschd.p_disp_dyn_sched", //works
-  "https://ssbprod11g.uncfsu.edu/pls/FSUPROD/bwckschd.p_disp_dyn_sched", // down atm?? down march 10, 2016. ports 80 and 443 closed, others filtered. looks like firewall still up but app down.
-  "https://banner.uregina.ca/prod/sct/bwckschd.p_disp_dyn_sched", //takes 3 hours, works
-  "https://banners.presby.edu/prod/bwckschd.p_disp_dyn_sched", // takes like 22 min, works
-  "https://eagles.tamut.edu/texp/bwckschd.p_disp_dyn_sched", // collegeName capilization bug (fixed) and one subject dosent have any results, but works
-  "https://ssb.sju.edu/pls/PRODSSB/bwckschd.p_disp_dyn_sched", //works
+  "https://ssb.banner.usu.edu/zprod/bwckschd.p_disp_dyn_sched", //works Utah state Uni
+  "https://ssbprod-fsu.uncecs.edu/pls/FSUPROD/bwckschd.p_disp_dyn_sched", // Fayetteville State University Banner 
+  "https://banner.uregina.ca/prod/sct/bwckschd.p_disp_dyn_sched", //University of Regina
+  "https://banners.presby.edu/prod/bwckschd.p_disp_dyn_sched", // PResbyterian College
+  "https://eagles.tamut.edu/texp/bwckschd.p_disp_dyn_sched", // Texas A&M
+  "https://ssb.sju.edu/pls/PRODSSB/bwckschd.p_disp_dyn_sched", //Saint Joseph
   "https://sail.oakland.edu/PROD/bwckschd.p_disp_dyn_sched", //works, takes 3 hours
-  "https://genisys.regent.edu/pls/prod/bwckschd.p_disp_dyn_sched",
-  "https://bappas2.gram.edu:9000/pls/gram/bwckschd.p_disp_dyn_sched", //dosent work in nodejs!!!!??? works in python, browser, etc
-  "https://sail.oakland.edu/PROD/bwckschd.p_disp_dyn_sched", // works 8/31/16, some minor errors in trello spider but nothing major 
-  "https://banweb.wm.edu/pls/PROD/bwckschd.p_disp_dyn_sched", // thier site worked on 8/31/16, but need to update spider code before can use (fatal errors)
-  "https://prod-ssb-01.dccc.edu/PROD/bwckschd.p_disp_dyn_sched", //worked in like dec 2015 and limited rate to about 100 connections at once.
-  "https://selfservice.mypurdue.purdue.edu/prod/bwckschd.p_disp_dyn_sched", // i think i fixed the bug. need to test again. 8/31/16
-  "https://xbss-prod.lasalle.edu/PROD/bwckschd.p_disp_dyn_sched", // works 8/31/16
-  "https://myswat.swarthmore.edu/pls/bwckschd.p_disp_dyn_sched", //works
-  "https://lewisweb.cc.lehigh.edu/PROD/bwckschd.p_disp_dyn_sched", //works 8/31/16, there are 3 classes that the prereq parser cant get because they have messed up parens. 
+  "https://bappas2.gram.edu:9000/pls/gram/bwckschd.p_disp_dyn_sched", // Grambling State University
+  "https://sail.oakland.edu/PROD/bwckschd.p_disp_dyn_sched", // Oakland University SAIL
+  "https://banweb.wm.edu/pls/PROD/bwckschd.p_disp_dyn_sched", // William and Mary
+  "https://prod-ssb-01.dccc.edu/PROD/bwckschd.p_disp_dyn_sched", // Delaware County Community College
+  "https://selfservice.mypurdue.purdue.edu/prod/bwckschd.p_disp_dyn_sched", // Purdue Uni
+  "https://xbss-prod.lasalle.edu/PROD/bwckschd.p_disp_dyn_sched", // LASALLE Uni
+  "https://myswat.swarthmore.edu/pls/bwckschd.p_disp_dyn_sched", //Swarthmore College
+  "https://lewisweb.cc.lehigh.edu/PROD/bwckschd.p_disp_dyn_sched", //LeHigh
+  
   "https://myweb.du.edu/mdb/bwckschd.p_disp_dyn_sched", // 8/31/16 uhhhhhhhh not really sure, it was working and then i mucked with mongodb indexes and it stopped. have mucked with indexes during spidering before so it might be something on the site that caused the code to stop. need to retry. 
   "https://ssbprod.rcgc.edu:9000/prod_ssb/bwckschd.p_disp_dyn_sched", // school aparently changed their hostname, it was gcc-ssbprod.gccnj.edu and now for the old domain dns fails now, wayback machine has it working in 2015: https://web.archive.org/web/20150316171359/https://gcc-ssbprod.gccnj.edu:9000/prod_ssb/bwckschd.p_disp_dyn_sched
   "https://pssb.stockton.edu/prod/bwckschd.p_disp_dyn_sched", //was port 9000, now is 443
@@ -101,6 +89,8 @@ module.exports = ["https://oscar.gatech.edu/pls/bprod/bwckschd.p_disp_dyn_sched"
 
 //Not working
  "https://bannerweb.upstate.edu/isis/bwckschd.p_disp_dyn_sched", //works
+ "https://genisys.regent.edu/pls/prod/bwckschd.p_disp_dyn_sched",
+ "https://oscar.gatech.edu/pls/bprod/bwckschd.p_disp_dyn_sched", //currently offline
 
 //Unique pages 
 https://regssb.bannerxe.clemson.edu/StudentRegistrationSsb/ssb/registration //clemson university 
