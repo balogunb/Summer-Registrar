@@ -36,55 +36,79 @@
 //     Some sites have robots.txt set to deny so Google and Bing do not spider it. 
 
 
-module.exports = [
-  "https://wl11gp.neu.edu/udcprod8/bwckschd.p_disp_dyn_sched", //Northeastern works
-  "https://ssb-prod.ec.ccsu.edu/PROD/byskcsob.P_TermSel", //Central Connecticut State
-  "https://ssb.cc.binghamton.edu/banner/bwckschd.p_disp_dyn_sched", //works but might have issues
-  "https://tturedss1.tntech.edu/pls/PROD/bwckschd.p_disp_dyn_sched", //Tennessee TECH
-  "https://prd-wlssb.temple.edu/prod8/bwckschd.p_disp_dyn_sched", //Works might take long 
-  "https://ssb.banner.usu.edu/zprod/bwckschd.p_disp_dyn_sched", //works Utah state Uni
-  "https://ssbprod-fsu.uncecs.edu/pls/FSUPROD/bwckschd.p_disp_dyn_sched", // Fayetteville State University Banner 
-  "https://banner.uregina.ca/prod/sct/bwckschd.p_disp_dyn_sched", //University of Regina
-  "https://banners.presby.edu/prod/bwckschd.p_disp_dyn_sched", // PResbyterian College
-  "https://eagles.tamut.edu/texp/bwckschd.p_disp_dyn_sched", // Texas A&M
-  "https://ssb.sju.edu/pls/PRODSSB/bwckschd.p_disp_dyn_sched", //Saint Joseph
-  "https://sail.oakland.edu/PROD/bwckschd.p_disp_dyn_sched", //works, takes 3 hours
-  "https://bappas2.gram.edu:9000/pls/gram/bwckschd.p_disp_dyn_sched", // Grambling State University
-  "https://sail.oakland.edu/PROD/bwckschd.p_disp_dyn_sched", // Oakland University SAIL
-  "https://banweb.wm.edu/pls/PROD/bwckschd.p_disp_dyn_sched", // William and Mary
-  "https://prod-ssb-01.dccc.edu/PROD/bwckschd.p_disp_dyn_sched", // Delaware County Community College
-  "https://selfservice.mypurdue.purdue.edu/prod/bwckschd.p_disp_dyn_sched", // Purdue Uni
-  "https://xbss-prod.lasalle.edu/PROD/bwckschd.p_disp_dyn_sched", // LASALLE Uni
-  "https://myswat.swarthmore.edu/pls/bwckschd.p_disp_dyn_sched", //Swarthmore College
-  "https://lewisweb.cc.lehigh.edu/PROD/bwckschd.p_disp_dyn_sched", //LeHigh
-  "https://myweb.du.edu/mdb/bwckschd.p_disp_dyn_sched",//Uni of Denver
-  "https://ssbprod.rcgc.edu:9000/prod_ssb/bwckschd.p_disp_dyn_sched", // RowanCollege
-  "https://pssb.stockton.edu/prod/bwckschd.p_disp_dyn_sched", //Stockton university
-  "https://www8.unm.edu/pls/banp/bwckschd.p_disp_dyn_sched", // The Uni of New Mexico
 
+/**Note: consider adding a basic description of each school by scraping from  either us news or college niche**/
+
+
+module.exports = [
+	//Has winter course offering 
+	  "https://wl11gp.neu.edu/udcprod8/bwckschd.p_disp_dyn_sched", //Northeastern works
+	   "https://ssb-prod.ec.ccsu.edu/PROD/byskcsob.P_TermSel", //Central Connecticut State
+	  "https://ssb.cc.binghamton.edu/banner/bwckschd.p_disp_dyn_sched", //works but might have issues
+	   "https://banner.uregina.ca/prod/sct/bwckschd.p_disp_dyn_sched", //University of Regina
+	   "https://ssb.sju.edu/pls/PRODSSB/bwckschd.p_disp_dyn_sched", //Saint Joseph - winter intersetion 
+	   "https://sail.oakland.edu/PROD/bwckschd.p_disp_dyn_sched", // Oakland University SAIL
+	   "https://lewisweb.cc.lehigh.edu/PROD/bwckschd.p_disp_dyn_sched", //LeHigh
+	   "https://myweb.du.edu/mdb/bwckschd.p_disp_dyn_sched",//Uni of Denver - Quarter interim
+	   "https://ssbprod.rcgc.edu:9000/prod_ssb/bwckschd.p_disp_dyn_sched", // RowanCollege
+	   "https://appprod.udayton.edu:9000/prod/bwckschd.p_disp_dyn_sched", //Live has winter offering
+	   "https://selfservice.brown.edu/ss/bwckschd.p_disp_dyn_sched", // might uses 12gigs of RAM
+	   "https://oxford.blinn.edu:9010/PROD/bwckschd.p_disp_dyn_sched",//Blinn College, Weird setup
+	   "https://ssb.ship.edu/prod/bwckschd.p_disp_dyn_sched",//Shippensburg Uni
+	   "https://loris.wlu.ca/register/ssb/term/termSelection?mode=search",//Washington and Lee Uni
+	   "https://banner.drexel.edu/pls/duprod/bwckschd.p_disp_dyn_sched",//Drexel Uni
+	   "https://novasis.villanova.edu/pls/bannerprd/bwckschd.p_disp_dyn_sched"//Villanova Uni
+
+
+
+
+
+
+
+	//Has only summer offerings 
+	"https://tturedss1.tntech.edu/pls/PROD/bwckschd.p_disp_dyn_sched", //Tennessee TECH
+    "https://prd-wlssb.temple.edu/prod8/bwckschd.p_disp_dyn_sched", //Works might take long 
+    "https://ssb.banner.usu.edu/zprod/bwckschd.p_disp_dyn_sched", //works Utah state Uni
+    "https://ssbprod-fsu.uncecs.edu/pls/FSUPROD/bwckschd.p_disp_dyn_sched", // Fayetteville State University Banner 
+    "https://ssbprod-fsu.uncecs.edu/pls/FSUPROD/bwckschd.p_disp_dyn_sched", // Fayetteville State University Banner 
+    "https://banners.presby.edu/prod/bwckschd.p_disp_dyn_sched", // PResbyterian College
+    "https://eagles.tamut.edu/texp/bwckschd.p_disp_dyn_sched", // Texas A&M
+    "https://bappas2.gram.edu:9000/pls/gram/bwckschd.p_disp_dyn_sched", // Grambling State University
+    "https://banweb.wm.edu/pls/PROD/bwckschd.p_disp_dyn_sched", // William and Mary
+ 	"https://prod-ssb-01.dccc.edu/PROD/bwckschd.p_disp_dyn_sched", // Delaware County Community College
+ 	"https://selfservice.mypurdue.purdue.edu/prod/bwckschd.p_disp_dyn_sched", // Purdue Uni
+ 	"https://xbss-prod.lasalle.edu/PROD/bwckschd.p_disp_dyn_sched", // LASALLE Uni
+ 	"https://myswat.swarthmore.edu/pls/bwckschd.p_disp_dyn_sched", //Swarthmore College
+ 	"https://pssb.stockton.edu/prod/bwckschd.p_disp_dyn_sched", //Stockton university
+ 	"https://www8.unm.edu/pls/banp/bwckschd.p_disp_dyn_sched", // The Uni of New Mexico 
+ 	"https://ui2web4.apps.uillinois.edu/BANPROD4/bwckschd.p_disp_dyn_sched", // U of illinois at springfield - no winter offering 
+  	"https://https://lpar2.jsu.edu/lpar1_pro8/bwckschd.p_disp_dyn_sched", //  JSU - no winter offering 
+  	"https://ssb.isu.edu/bprod/bwckschd.p_disp_dyn_sched", //  Idaho State Uni - no winter  
+  	"https://ssb.columbiastate.edu/PROD/bwckschd.p_disp_dyn_sched", // Columbia state communitty college. 
+  	"https://ssbprod.wichita.edu/PROD/bwckschd.p_disp_dyn_sched",//Wichita state Uni
+  	"https://prodssb.mscc.edu/PROD/bwckschd.p_disp_dyn_sched",//MOTLOW state community college 
+  	"https://banner8.utm.edu/prod/bwckschd.p_disp_dyn_sched",//Uni of Martin
+  	"https://nssb-p.adm.fit.edu/prod/bwckschd.p_disp_dyn_sched",//Florida tech
+  	"https://prodssb.ws.edu/pls/PROD/bwckschd.p_disp_dyn_sched",//Walters State
+  	"https://bannerss.augustatech.edu/pls/ban8/bwckschd.p_disp_dyn_sched",//Augusta Technical College
+  	"https://infobear.bridgew.edu/BANP/bwckschd.p_disp_dyn_sched",//Bridge water state uni
+
+ 
+  
+  
+
+
+	 //Unique pages 
+	"https://regssb.bannerxe.clemson.edu/StudentRegistrationSsb/ssb/registration" //clemson university 
+	"https://courses.my.harvard.edu/psp/courses/EMPLOYEE/EMPL/h/?tab=HU_CLASS_SEARCH" //havard college
 
   
-  "https://appprod.udayton.edu:9000/prod/bwckschd.p_disp_dyn_sched", // worked 9/1/16, 4 prereq parsing issues but besides that worked perfectly.
-  "https://ui2web4.apps.uillinois.edu/BANPROD4/bwckschd.p_disp_dyn_sched", // worked 9/2/16 no errors
-  "https://lpar2.jsu.edu/DADNormalPRO8/bwckschd.p_disp_dyn_sched", //  worked 9/2/16 no errors
-  "https://ssb.isu.edu/bprod/bwckschd.p_disp_dyn_sched", //  worked 9/2/16 no errors
-  "https://ssb.columbiastate.edu/PROD/bwckschd.p_disp_dyn_sched", // worked dec 27th, 2016
-  "https://selfservice.brown.edu/ss/bwckschd.p_disp_dyn_sched", // uses 12GB RAM, works. Dec 28th.  Dec mongo inserting errors on 9/2/16, need to try again.
-  "https://ssbprod.wichita.edu/PROD/bwckschd.p_disp_dyn_sched",
-  "https://prodssb.mscc.edu/PROD/bwckschd.p_disp_dyn_sched",
-  "https://ssbprod11g.uncfsu.edu/pls/FSUPROD/bwckschd.p_disp_dyn_sched",
-  "https://banner4.utm.edu/prod/bwckschd.p_disp_dyn_sched",
-  "https://nssb-p.adm.fit.edu/prod/bwckschd.p_disp_dyn_sched",
-  "https://prodssb.ws.edu/pls/PROD/bwckschd.p_disp_dyn_sched",
-  "https://oasis.farmingdale.edu/banner/bwckschd.p_disp_dyn_sched",
-  "https://oxford.blinn.edu:9010/PROD/bwckschd.p_disp_dyn_sched",
-  "https://ssb.ship.edu/prod/bwckschd.p_disp_dyn_sched",
-  "https://telaris.wlu.ca/ssb_prod/bwckschd.p_disp_dyn_sched",
-  "https://www2.augustatech.edu/pls/ban8/bwckschd.p_disp_dyn_sched",
-  "https://banner.drexel.edu/pls/duprod/bwckschd.p_disp_dyn_sched",
-  "https://infobear.bridgew.edu/BANP/bwckschd.p_disp_dyn_sched",
-  "https://new-sis-app.sph.harvard.edu:9010/prod/bwckschd.p_disp_dyn_sched", // This is Harvard's School of public health, not the Undergraduate College. 
-  "https://novasis.villanova.edu/pls/bannerprd/bwckschd.p_disp_dyn_sched"
+
+  	
+  
+  
+  
+  
 ]
 
 
@@ -93,6 +117,8 @@ module.exports = [
  "https://genisys.regent.edu/pls/prod/bwckschd.p_disp_dyn_sched",
  "https://oscar.gatech.edu/pls/bprod/bwckschd.p_disp_dyn_sched", //currently offline
  "https://banssbprod.xavier.edu:8099/PROD/bwckschd.p_disp_dyn_sched", // works 9/1/16 took about 40 min
+ "https://ssbprod11g.uncfsu.edu/pls/FSUPROD/bwckschd.p_disp_dyn_sched",//FayetteVille state uni not working. working version link in first list.
+ "https://oasis.farmingdale.edu/banner/bwckschd.p_disp_dyn_sched",//requires user Id and pin
 
-//Unique pages 
-https://regssb.bannerxe.clemson.edu/StudentRegistrationSsb/ssb/registration //clemson university 
+
+
