@@ -33,3 +33,7 @@ class SubjectInfo:
 
 website = 'https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched'
 browser = bs.getCatalogPage(website)
+bs.scrapePage(browser)
+
+
+#print(browser.page_source)

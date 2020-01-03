@@ -55,3 +55,23 @@ def getCatalogPage(website):
 
 
 
+
+
+def scrapePage(browser):
+	body = browser.find_element_by_xpath("//div[@class ='pagebodydiv']")
+	courseList = body.find_element_by_tag_name('tbody')
+	courseTitles = courseList.find_elements_by_class_name('ddtitle')
+	courseContents = courseList.find_elements_by_xpath("/html/body/div[@class='pagebodydiv']/table[@class='datadisplaytable'][1]/tbody/tr/td")
+	print(len(courseTitles))
+	print(len(courseContents))
+	#print(courseList.get_attribute('innerHTML'))
+
+
+	#sections = browser.find_elements_by_xpath("/html/body/div/table/tbody/tr/td/table/tbody/tr[2]")
+
+
+
+	#soup = BeutifulSoup(txt, 'lxml')
+
+
+
