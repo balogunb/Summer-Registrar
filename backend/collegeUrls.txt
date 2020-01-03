@@ -40,8 +40,20 @@
 /**Note: consider adding a basic description of each school by scraping from  either us news or college niche**/
 
 
-module.exports = [
-	//Has winter course offering 
+	/*** Has winter course offering **/
+
+	Lafayette College - "https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched"
+		Holds all courses on one page
+
+
+
+
+
+
+
+
+
+
 	  "https://wl11gp.neu.edu/udcprod8/bwckschd.p_disp_dyn_sched", //Northeastern works
 	   "https://ssb-prod.ec.ccsu.edu/PROD/byskcsob.P_TermSel", //Central Connecticut State
 	  "https://ssb.cc.binghamton.edu/banner/bwckschd.p_disp_dyn_sched", //works but might have issues
@@ -58,6 +70,21 @@ module.exports = [
 	   "https://loris.wlu.ca/register/ssb/term/termSelection?mode=search",//Washington and Lee Uni
 	   "https://banner.drexel.edu/pls/duprod/bwckschd.p_disp_dyn_sched",//Drexel Uni
 	   "https://novasis.villanova.edu/pls/bannerprd/bwckschd.p_disp_dyn_sched"//Villanova Uni
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

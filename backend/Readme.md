@@ -24,14 +24,7 @@ Course Info =
 		//to be used later 
 		schoolZipCode:
 
-
-	
-
-
-
-
-
-
-
-
 }
+
+
+
