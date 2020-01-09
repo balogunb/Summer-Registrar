@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019 Ryan Basit
+ * Copyright (c) 2019 Basit
  *
  * This file is part of SummerRegistrar.
  *
