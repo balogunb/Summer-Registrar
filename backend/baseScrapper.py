@@ -11,7 +11,27 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 
-
+class SubjectInfo:
+    school = 'Lafayette College' #School name 
+    zipcode = '18042' #School zipcode 
+    term ='Winter/Interim' #ie summer 2019 maybe seperate year and term 
+    year = '2020'
+    department = '' # ie humanities etc 
+    courseName = '' #class Name
+    CRN = '' #course registration number for the subject
+    section = '' #course section ID
+    regDate  = ''#registration date
+    attribute = '' #course attribute ie Social Science Outcome
+    location = '' #where the class is going to hold
+    dateRange = ''
+    description = '' # course description
+    days = '' # days lecture would be held
+    time = '' #time class would hold
+    duration = '' #the date range for the class
+    type = ''  #usually lecture
+    instructor = '' #instructor in charge of the class
+    prereq = ''
+    regDeadline = '' #registration deadline
 
 
 
@@ -62,16 +82,38 @@ def scrapePage(browser):
 	courseList = body.find_element_by_tag_name('tbody')
 	courseTitles = courseList.find_elements_by_class_name('ddtitle')
 	courseContents = courseList.find_elements_by_xpath("/html/body/div[@class='pagebodydiv']/table[@class='datadisplaytable'][1]/tbody/tr/td")
+	
 	print(len(courseTitles))
-	print(len(courseContents))
-	#print(courseList.get_attribute('innerHTML'))
-
-
-	#sections = browser.find_elements_by_xpath("/html/body/div/table/tbody/tr/td/table/tbody/tr[2]")
-
-
-
+	print(len(courseContents))	
+	scrapeInfo(courseTitles,courseContents)
 	#soup = BeutifulSoup(txt, 'lxml')
+
+
+
+def scrapeInfo(titlesList,contentList):
+	for x in range(len(titlesList)):
+		subj = scrapeTitle(titlesList[x])
+
+	
+
+
+
+def scrapeTitle(titleDom):
+	subject = SubjectInfo()
+	details = titleDom.find_element_by_tag_name('a').text
+	detailsList = details.split(' - ')
+	subject.courseName = detailsList[0]
+	subject.CRN = detailsList[1]
+	subject.section = detailsList[2] + " - " + detailsList[3]
+	#sectionTag.append(subject)
+	print(subject)
+	
+	
+
+
+
+#def scrapeBody(bodyDom):
+
 
 
 
