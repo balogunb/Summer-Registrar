@@ -58,7 +58,7 @@
 	   "https://ssb-prod.ec.ccsu.edu/PROD/byskcsob.P_TermSel", //Central Connecticut State
 	  "https://ssb.cc.binghamton.edu/banner/bwckschd.p_disp_dyn_sched", //works but might have issues
 	   "https://banner.uregina.ca/prod/sct/bwckschd.p_disp_dyn_sched", //University of Regina ~~IN PROGRESS~~
-	   "https://ssb.sju.edu/pls/PRODSSB/bwckschd.p_disp_dyn_sched", //Saint Joseph - winter intersetion 
+	   "https://ssb.sju.edu/pls/PRODSSB/bwckschd.p_disp_dyn_sched", //Saint Joseph - winter intersetion ~~IN PROGRESS~~
 	   "https://sail.oakland.edu/PROD/bwckschd.p_disp_dyn_sched", // Oakland University SAIL
 	   "https://lewisweb.cc.lehigh.edu/PROD/bwckschd.p_disp_dyn_sched", //LeHigh
 	   "https://myweb.du.edu/mdb/bwckschd.p_disp_dyn_sched",//Uni of Denver - Quarter interim
