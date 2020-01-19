@@ -96,9 +96,9 @@ def scrapeInfo(titlesList,contentList):
 	subjectList = [] #contains objects which store SubjectInfo
 	for x in range(len(titlesList)):
 		subj = scrapeTitle(titlesList[x],browserN)
-		scrapeBody(contentList[x], subj)
+		#scrapeBody(contentList[x], subj)
 		subjectList.append(subj)
-	print('list len =' + str(len(subjectList)))
+	#print('list len =' + str(len(subjectList)))
 	return subjectList
 
 	
@@ -126,8 +126,8 @@ def getCourseDescription(browser,subj):
 
 
 
-def scrapeBody(bodyDom,subj):
-	print('')
+#def scrapeBody(bodyDom,subj):
+	
 
 
 
