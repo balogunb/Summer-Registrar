@@ -33,7 +33,42 @@ class SubjectInfo:
 
 website = 'https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched'
 browser = bs.getCatalogPage(website)
-bs.scrapePage(browser)
+courseList = bs.scrapePage(browser)
+store(courseList)
 
 
-#print(browser.page_source)
+def store(cList):
+	#Get env variables
+	dotenv_path = join(dirname(r'''C:\Users\Basit\OneDrive\Summer 2019 Projects and Courses\Summer-Registrar\backend'''), '.env')
+	load_dotenv(dotenv_path)
+	
+
+
+
+
+
+
+
+# Accessing variables.
+password = os.getenv('PASSWORD')
+
+print(password)
+#Store all data in database
+#print('Insert password')
+#password = input()
+
+
+link = "mongodb+srv://Basitb:" + password + "@collegecourses-ne1ze.mongodb.net/test?retryWrites=true&w=majority"
+client = MongoClient(link)
+db = client.schools_courses
+
+for course in sectionTag:
+    schools_courses = {
+    'name' : course.name,
+    'code' : course.code,
+    'section' : course.section
+
+
+    }
+    db.Lafayette_College.insert_one(schools_courses) 
+	
