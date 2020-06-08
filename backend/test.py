@@ -22,8 +22,35 @@ from selenium.webdriver.support.ui import WebDriverWait
 #browser.get('https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched')
 #browser1.get('https://bannerselfservice.lafayette.edu/pls/bprod/bwckschd.p_disp_dyn_sched')
 
-browser = webdriver.Chrome();
-browser.get("google.com")
-print('testing123')
+#browser = webdriver.Chrome();
+#browser.get("google.com")
+#print('testing123')
 
+
+
+
+from pymongo import MongoClient
+
+
+
+
+
+link = "mongodb+srv://Basitb:"+ password+ "@collegecourses-ne1ze.mongodb.net/test?retryWrites=true&w=majority"
+print(link)
+client = MongoClient(link)
+db = client.CollegeCourses
+
+
+schools_courses = {
+	'courseName' : "Test1111",
+	'school' : " ",
+	'term' : " ",
+	'year' : " ",
+	'CRN' : " ",
+	'description' : " ",
+	'section' : " ",
+	'zipcode' : " "
+	}
+db.Courses.insert_one(schools_courses)
+    	
 	
