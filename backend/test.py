@@ -35,14 +35,14 @@ from pymongo import MongoClient
 
 
 
-link = "mongodb+srv://Basitb:"+ password+ "@collegecourses-ne1ze.mongodb.net/test?retryWrites=true&w=majority"
+link = "mongodb+srv://ShihoVN:Lafayette2021@collegecourses-ne1ze.mongodb.net/test?retryWrites=true&w=majority"
 print(link)
 client = MongoClient(link)
 db = client.CollegeCourses
 
 
 schools_courses = {
-	'courseName' : "Test1111",
+	'courseName' : "Shiho",
 	'school' : " ",
 	'term' : " ",
 	'year' : " ",
@@ -51,6 +51,7 @@ schools_courses = {
 	'section' : " ",
 	'zipcode' : " "
 	}
+
 db.Courses.insert_one(schools_courses)
     	
 	

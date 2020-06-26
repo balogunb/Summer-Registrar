@@ -8,10 +8,10 @@ load_dotenv()
 
 
 class SubjectInfo:
-    school = 'Lafayette College' #School name 
-    zipcode = '18042' #School zipcode 
-    term ='Winter/Interim' #ie summer 2019 maybe seperate year and term 
-    year = '2020'
+    school = 'Drexel University' #School name 
+    zipcode = '' #School zipcode 
+    term ='Summer ' #ie summer 2019 maybe seperate year and term 
+    year = '2019'
     department = '' # ie humanities etc 
     courseName = '' #class Name
     CRN = '' #course registration number for the subject
