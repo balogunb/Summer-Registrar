@@ -36,8 +36,8 @@ class SubjectInfo:
 
 def store(cList):
 	#Get env variables
-	dotenv_path = join(dirname(r'''C:\Users\Basit\OneDrive\Projects & courses\Summer-Registrar\backend'''), '.env')
-	load_dotenv(dotenv_path)
+	dotenv_path = join(dirname(r'''C:\Users\Basit\OneDrive\Projects & courses\Summer-Registrar\backend'''), '.env') #So is this where you stored your password?
+	load_dotenv(dotenv_path) #??
 	# Accessing variables.
 	password = os.getenv('PASSWORD')
 	print(password)
